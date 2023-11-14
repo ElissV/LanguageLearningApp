@@ -7,10 +7,7 @@ function DropdownMenu() {
             <a className={styles.NavLink}>
                 Profile
             </a>
-            <a className={styles.NavLink}>
-                Start Now
-            </a>
-            <div>
+            <div className={styles.ThemeSwitch}>
                 Theme Switch
             </div>
             <div className={styles.ShiningButtonContainer}>

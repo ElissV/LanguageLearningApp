@@ -11,7 +11,7 @@
         padding-top: 1em;
     }
 
-    .NavLink::after {
+    .NavLink::after, .ThemeSwitch::after {
         content: "";
         display: block;
         border-bottom: 1px solid;
@@ -19,12 +19,9 @@
         padding-top: 1em;
     }
 
-    div {
-        padding-bottom: 1em;
-    }
-
     .ShiningButtonContainer {
         width: max-content;
         margin: auto;
+        padding-bottom: 1em;
     }
 }
