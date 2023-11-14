@@ -1,10 +1,19 @@
-.TextContainer {
-    color: #375705;
-    font-weight: 500;
-    margin-bottom: 2rem;
-}
+.SectionContainer {
 
-.CardContainer {
-    display: flex;
-    justify-content: center;
+    .SectionInnerContainer {
+    
+        .TextContainer {
+            color: #375705;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            width: max-content;
+            margin: 0 auto;
+            text-wrap: wrap;
+        }
+        
+        .CardContainer {
+            display: flex;
+            justify-content: center;
+        }
+    }
 }

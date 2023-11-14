@@ -1,3 +1,9 @@
 .MainViewContainer {
-    margin: 0 20px 0 20px;
+}
+
+@media screen and (max-width: 425px) {
+    .MainViewContainer {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
