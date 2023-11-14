@@ -1,4 +1,5 @@
 import { ShiningButton } from '../../common/components/ShiningButton/ShiningButton';
+import { ThemeSwitch } from '../../common/components/ThemeSwitch/ThemeSwitch';
 import styles from './DropdownMenu.module.scss';
 
 function DropdownMenu() {
@@ -8,7 +9,7 @@ function DropdownMenu() {
                 Profile
             </a>
             <div className={styles.ThemeSwitch}>
-                Theme Switch
+                <ThemeSwitch />
             </div>
             <div className={styles.ShiningButtonContainer}>
                 <ShiningButton />

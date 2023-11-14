@@ -5,23 +5,26 @@
     border-bottom: 3px solid;
     border-color: #5A8C0D;
 
-    a, div {
+    .NavLink, .ThemeSwitch {
+        position: relative;
         display: block;
         text-align: center;
-        padding-top: 1em;
+        padding: 1em 0;
     }
 
     .NavLink::after, .ThemeSwitch::after {
         content: "";
         display: block;
+        position: absolute;
+        height: 1px;
+        width: 100%;
         border-bottom: 1px solid;
         border-color: #5A8C0D;
-        padding-top: 1em;
     }
 
     .ShiningButtonContainer {
         width: max-content;
         margin: auto;
-        padding-bottom: 1em;
+        padding: 1em 0;
     }
 }
