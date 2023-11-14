@@ -1,0 +1,57 @@
+.CardContainer {
+    perspective: 1000px;
+    width: 280px;
+    height: 260px;
+    padding-bottom: 30px;
+
+    .CardInnerContainer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+
+        .Card {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(92, 213, 256);
+            border-radius: 10px;
+            outline: solid 2px #34ADD7;
+            font-size: 1.5rem;
+            font-weight: 900;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            box-shadow: 0px 20px 20px #787878;
+
+            .CardSide {
+                display: flex;
+                align-items: center;
+                width: 80%;
+                height: 80%;
+                outline: dashed 4px #34ADD7;
+                border-radius: 10px;
+            }
+
+            .CardText {
+                position: absolute;
+                background-color: rgb(92, 213, 256);
+                color: #fff;
+                -webkit-text-stroke-width: 1.4px;
+                -webkit-text-stroke-color: #134c5f;
+            }
+        }
+
+        .CardBack {
+            transform: rotateY(180deg);
+        }
+    }
+}
+
+.CardContainer:hover .CardInnerContainer {
+    transform: rotateY(180deg);
+}

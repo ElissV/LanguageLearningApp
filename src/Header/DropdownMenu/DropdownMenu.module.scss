@@ -1,0 +1,30 @@
+.Menu {
+    width: 100%;
+    position: absolute;
+    background-color: #7AAC2D;
+    border-bottom: 3px solid;
+    border-color: #5A8C0D;
+
+    a, div {
+        display: block;
+        text-align: center;
+        padding-top: 1em;
+    }
+
+    .NavLink::after {
+        content: "";
+        display: block;
+        border-bottom: 1px solid;
+        border-color: #5A8C0D;
+        padding-top: 1em;
+    }
+
+    div {
+        padding-bottom: 1em;
+    }
+
+    .ShiningButtonContainer {
+        width: max-content;
+        margin: auto;
+    }
+}

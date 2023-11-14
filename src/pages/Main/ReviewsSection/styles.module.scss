@@ -1,0 +1,58 @@
+.MainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 30px;
+
+    .RatingContainer {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: max-content;
+    }
+
+    .ReviewCardContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+
+        .ReviewCard {
+            background-color: #f5f5dc;
+            outline: 2px solid #D3D3AF;
+            font-size: 1rem;
+            padding: 40px 20px;
+            border-radius: 10px;
+    
+            .ReviewerNameContainer {
+                text-align: right;
+                margin-top: 20px;
+            }
+        }
+
+        .Icon {
+            color: #545454;
+        }
+        
+        .ArrowContainerBlock {
+            width: max-content;
+        }
+    }
+
+    @media screen and (min-width: 425px) {
+        .ArrowContainerBlock {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 424px) {
+        .ReviewCardContainer {
+            flex-direction: column;
+
+            .InlineArrowButton {
+                display: none;
+            }
+        }
+    }
+}

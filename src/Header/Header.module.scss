@@ -1,0 +1,22 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #7AAC2D;
+    padding: 14px 10px;
+    border-bottom: 3px solid;
+    border-color: #5A8C0D;
+
+    .Logo {
+        display: block;
+        background-image: url('../../public/teddy_bear_head-simplified-2-eyes.svg');
+        background-repeat: no-repeat;
+        height: 3.4rem;
+        width: 4.6rem;
+    }
+
+    .MenuIcon {
+        color:#375705;
+        height: 3rem;
+        width: 3rem;
+    }
+}
