@@ -5,6 +5,10 @@
     border-bottom: 3px solid;
     border-color: #5A8C0D;
 
+    .NavLink {
+        cursor: pointer;
+    }
+
     .NavLink, .ThemeSwitch {
         display: block;
         position: relative;
