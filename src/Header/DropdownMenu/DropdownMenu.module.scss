@@ -4,27 +4,21 @@
     background-color: #7AAC2D;
     border-bottom: 3px solid;
     border-color: #5A8C0D;
-    padding: 1em 0;
 
     .NavLink, .ThemeSwitch {
         display: block;
         position: relative;
         text-align: center;
-        padding: 1em 0;
-    }
-
-    .NavLink::after, .ThemeSwitch::after {
-        content: "";
-        display: block;
-        // margin: 1em 0;
-        position: absolute;
-        width: 100%;
-        border-bottom: 1px solid;
-        border-color: #5A8C0D;
+        box-sizing: border-box;
+        border-bottom: 1px solid #5A8C0D;
     }
 
     .ShiningButtonContainer {
         width: max-content;
         margin: auto;
+    }
+
+    .NavLink, .ThemeSwitch, .ShiningButtonContainer {
+        padding: 1em 0;
     }
 }

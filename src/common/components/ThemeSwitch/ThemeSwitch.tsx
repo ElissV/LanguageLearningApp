@@ -3,8 +3,11 @@ import LightModeIcon from '@mui/icons-material/LightMode';
 import ModeNightIcon from '@mui/icons-material/ModeNight';
 import styles from "./styles.module.scss";
 import { createTheme, ThemeProvider } from '@mui/material';
+import { useState } from 'react';
 
 export function ThemeSwitch() {
+
+    const [isLightThemeOn, setLightThemeOn] = useState(true);
 
     const theme = createTheme({
         components: {
@@ -31,11 +34,11 @@ export function ThemeSwitch() {
     return (
         <>
             <div className={styles.MainContainer}>
-                <LightModeIcon />
+                <LightModeIcon className={isLightThemeOn ? styles.IsChosen : ''} />
                 <ThemeProvider theme={theme}>
-                    <Switch />
+                    <Switch onChange={() => setLightThemeOn(!isLightThemeOn)} />
                 </ThemeProvider>
-                <ModeNightIcon />
+                <ModeNightIcon className={isLightThemeOn ? '' : styles.IsChosen} />
             </div>
         </>
     );
