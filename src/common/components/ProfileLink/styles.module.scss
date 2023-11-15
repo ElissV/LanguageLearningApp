@@ -1,0 +1,26 @@
+.ProfileLink {
+    display: block;
+
+    .ProfileLinkInnerContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: #213404;
+        font-weight: 500;
+
+        .Avatar {
+            display: inline-block;
+            width: 44px;
+            height: 42px;
+            border-radius: 50%;
+            background-image: url("../../../../public/default-avatar.jpg");
+            background-size: cover;
+            border: 2px #375705 solid;
+        }
+    }
+}
+
+.ProfileLink:hover {
+    background-color: aliceblue;
+}

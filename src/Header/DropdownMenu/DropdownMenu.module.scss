@@ -8,13 +8,16 @@
 
     .NavLink, .ThemeSwitch {
         display: block;
+        position: relative;
         text-align: center;
+        padding: 1em 0;
     }
 
     .NavLink::after, .ThemeSwitch::after {
         content: "";
         display: block;
-        margin: 1em 0;
+        // margin: 1em 0;
+        position: absolute;
         width: 100%;
         border-bottom: 1px solid;
         border-color: #5A8C0D;
