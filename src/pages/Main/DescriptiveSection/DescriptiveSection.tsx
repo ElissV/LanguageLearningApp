@@ -5,13 +5,13 @@ function DescriptiveSection() {
     return (
         <section className={styles.SectionContainer}>
             <div className={styles.SectionInnerContainer}>
-                <div className={styles.TextContainer}>
-                    <p>☝️ Improve your vocabulary.</p>
-                    <p>☝️ Start today.</p>
-                    <p>☝️ Don't be lazy.</p>
-                    <p>☝️ Memorize words that you specify yourself.</p>
-                    <p>☝️ Free of charge!</p>
-                </div>
+                <ol className={styles.TextList}>
+                    <li>Improve your vocabulary.</li>
+                    <li>Start today.</li>
+                    <li>Don't be lazy.</li>
+                    <li>Memorize words that you specify yourself.</li>
+                    <li>Free of charge!</li>
+                </ol>
                 <div className={styles.CardContainer}>
                     <Card />
                 </div>

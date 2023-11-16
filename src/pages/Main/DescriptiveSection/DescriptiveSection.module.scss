@@ -2,12 +2,20 @@
 
     .SectionInnerContainer {
     
-        .TextContainer {
+        .TextList {
             color: #375705;
             font-weight: 500;
             margin-bottom: 2rem;
             margin: 0 auto 30px auto;
             text-wrap: wrap;
+
+            li {
+                margin: 0.8em 0;
+            }
+
+            li::marker {
+                content: '☝️ ';
+            }
         }
         
         .CardContainer {

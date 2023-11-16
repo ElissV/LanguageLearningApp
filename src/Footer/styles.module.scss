@@ -11,11 +11,11 @@
         background-image: url("../../public/teddy_bear.svg");
         background-repeat: no-repeat;
         position: relative;
-        margin-top: -60px;
+        margin-top: -40px;
         z-index: 2;
         width: var(--side-areas-width);
-        height: 100px;
-        animation: upAndDownFloat 3.5s infinite;
+        height: 80px;
+        animation: upAndDownFloat 3s infinite;
         animation-timing-function: linear;
     }
 
@@ -35,13 +35,13 @@
 
     @keyframes upAndDownFloat {
         0% {
-            margin-top: -60px;
+            margin-top: -40px;
         }
         50% {
-            margin-top: -80px;
+            margin-top: -60px;
         }
         100% {
-            margin-top: -60px;
+            margin-top: -40px;
         }
     }
 }
