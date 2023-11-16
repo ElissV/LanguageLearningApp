@@ -5,7 +5,7 @@ export function ProfileLink() {
         <a className={styles.ProfileLink}>
             <div className={styles.ProfileLinkInnerContainer}>
                 <div className={styles.Avatar}></div>
-                <span>Edit Your Profile</span>
+                <span className={styles.Label}>Edit Your Profile</span>
             </div>
         </a>
     );
