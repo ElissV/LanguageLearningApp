@@ -1,5 +1,5 @@
 import classnames from "classnames";
-import styles from "./Card.module.scss";
+import styles from "./styles.module.scss";
 
 function Card() {
     return (

@@ -7,11 +7,13 @@ import { ReviewsSection } from "./ReviewsSection/ReviewsSection";
 function Main() {
     return (
         <div className={styles.MainViewContainer}>
-            <WelcomeSection />
-            <Divider />
-            <DescriptiveSection />
-            <Divider />
-            <ReviewsSection />
+            <div className={styles.MainViewInnerContainer}>
+                <WelcomeSection />
+                <Divider />
+                <DescriptiveSection />
+                <Divider />
+                <ReviewsSection />
+            </div>
         </div>
     );
 }

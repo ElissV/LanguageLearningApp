@@ -1,7 +1,8 @@
 .CardContainer {
+    display: flex;
+    justify-content: center;
     perspective: 1000px;
     width: 100%;
-    height: 260px;
     padding-bottom: 30px;
 
     .CardInnerContainer {
@@ -44,6 +45,11 @@
                 -webkit-text-stroke-width: 1.4px;
                 -webkit-text-stroke-color: #134c5f;
             }
+        }
+
+        @media screen and (max-width: 500px) {
+            width: 85vw;
+            height: 80vw;
         }
 
         .CardBack {

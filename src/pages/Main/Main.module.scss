@@ -1,4 +1,11 @@
 .MainViewContainer {
+
+    .MainViewInnerContainer {
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 auto;
+        margin: 0 auto;  
+    }
 }
 
 @media screen and (max-width: 425px) {
