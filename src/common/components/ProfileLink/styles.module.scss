@@ -1,6 +1,6 @@
 .ProfileLink {
     display: flex;
-    align-items: center;
+    justify-content: center;
 
     .ProfileLinkInnerContainer {
         display: flex;
@@ -21,6 +21,12 @@
         }
 
         @media screen and (min-width: 768px) {
+            .Avatar:hover {
+                transition: border;
+                transition-duration: 0.5s;
+                border: 2px #e2f986 solid;
+            }
+
             .Label {
                 display: none;
             }

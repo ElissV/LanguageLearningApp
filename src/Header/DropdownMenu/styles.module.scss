@@ -5,11 +5,13 @@
     border-bottom: 3px solid;
     border-color: #5A8C0D;
 
-    .NavLink {
+    .ProfileLinkContainer {
+        display: flex;
+        justify-content: center;
         cursor: pointer;
     }
 
-    .NavLink, .ThemeSwitch {
+    .ProfileLinkContainer, .ThemeSwitch {
         display: block;
         position: relative;
         text-align: center;
@@ -22,7 +24,7 @@
         margin: auto;
     }
 
-    .NavLink, .ThemeSwitch, .ShiningButtonContainer {
+    .ProfileLinkContainer, .ThemeSwitch, .ShiningButtonContainer {
         padding: 1em 0;
     }
 }

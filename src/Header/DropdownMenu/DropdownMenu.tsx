@@ -1,12 +1,12 @@
 import { ProfileLink } from '../../common/components/ProfileLink/ProfileLink';
 import { ShiningButton } from '../../common/components/ShiningButton/ShiningButton';
 import { ThemeSwitch } from '../../common/components/ThemeSwitch/ThemeSwitch';
-import styles from './DropdownMenu.module.scss';
+import styles from './styles.module.scss';
 
 function DropdownMenu() {
     return (
         <nav className={styles.Menu}>
-            <div className={styles.NavLink}>
+            <div className={styles.ProfileLinkContainer}>
                 <ProfileLink />
             </div>
             <div className={styles.ThemeSwitch}>
