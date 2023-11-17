@@ -12,6 +12,7 @@
         border-radius: 10px;
         font-family: Merienda;
         text-align: center;
+        height: 100%;
     
         .Shine {
             height: 4em;
@@ -21,7 +22,7 @@
             top: 0;
             left: -28px;
             transform: skewX(-20deg) translateX(0);
-            animation: buttonShine 5s infinite; 
+            animation: buttonShine 4s infinite; 
         }
     
         @keyframes buttonShine {
@@ -29,10 +30,10 @@
                 left: -28px;
             }
             50% {
-                left: 160px;
+                left: 180px;
             }
             100% {
-                left: 160px;
+                left: 180px;
             }
         }
     }

@@ -13,19 +13,30 @@ function Header() {
     return (
         <>
             <header className={styles.Header}>
-                <a className={styles.Logo} href="#"></a>
-                <ShiningButton />
-                <div>
-                    <ThemeSwitch />
-                    <ProfileLink />
+                <div className={styles.BigScreenView}>
+                    <a className={styles.LogoContainer} href="#">
+                        <div className={styles.Logo}></div>
+                    </a>
+                    <div className={styles.ButtonContainer}>
+                        <ShiningButton />
+                    </div>
+                    <div className={styles.SettingsContainer}>
+                        <ThemeSwitch />
+                        <ProfileLink />
+                    </div>
                 </div>
-                
-                <Button
-                    className={styles.NavMenu}
-                    onClick={() => setShowDropdown(!showDropdown)}
-                >
-                    <MenuIcon className={styles.MenuIcon} />
-                </Button>
+
+                <div className={styles.SmallScreenView}>
+                    <a className={styles.LogoContainer} href="#">
+                        <div className={styles.Logo}></div>
+                    </a>
+                    <Button
+                        className={styles.NavMenu}
+                        onClick={() => setShowDropdown(!showDropdown)}
+                    >
+                        <MenuIcon className={styles.MenuIcon} />
+                    </Button>
+                </div>
             </header>
             {showDropdown && <DropdownMenu />}
         </>
