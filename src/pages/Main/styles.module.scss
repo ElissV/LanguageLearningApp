@@ -3,13 +3,8 @@
     .MainViewInnerContainer {
         display: flex;
         flex-direction: column;
+        align-items: center;
         flex: 0 1 auto;
-        margin: 0 auto;  
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .MainViewContainer {
         width: 90%;
         margin: 0 auto;
     }

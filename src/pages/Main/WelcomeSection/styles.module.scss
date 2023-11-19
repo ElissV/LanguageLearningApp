@@ -1,23 +1,43 @@
 .MainContainer {
     padding: 3rem 0 0 0;
-    text-align: center;
-    
-    h2 {
-        font-size: calc(3rem + 1vw);
-        line-height: calc(3.1rem + 1vw);
-        background-image: url("../../../../public/forest.jpg");
-        background-size: cover;
-        background-clip: text;
-        color: rgba(0, 0, 0, 0);
-        -webkit-text-stroke-width: 1.8px;
-        -webkit-text-stroke-color: #375705;
-        margin: 0 0 0.5em 0;
-        text-wrap: wrap;
-    }
 
-    p {
-        color: #375705;
-        font-weight: bold;
-        font-size: calc(1rem + 0.3vw);
+    hgroup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            display: inline-block;
+            font-size: calc(3rem + 3.5vw);
+            line-height: calc(3rem + 4vw);
+            background-image: url("../../../../public/forest.jpg");
+            background-size: cover;
+            background-clip: text;
+            color: rgba(0, 0, 0, 0);
+            -webkit-text-stroke-width: calc(1.1px + 0.1vw);
+            -webkit-text-stroke-color: #375705;
+            margin: 0 0 0.2em 0;
+            text-wrap: wrap;
+            text-align: center;
+            width: min-content;
+        }
+    
+        p {
+            color: #375705;
+            font-weight: bold;
+            font-size: calc(1rem + 0.3vw);
+            width: max-content;
+        }
     }
+}
+
+@media screen and (min-width: 768px) {
+    .MainContainer {
+        hgroup {
+            h2 {
+                text-wrap: nowrap;
+                width: auto;
+            }
+        }
+    }   
 }

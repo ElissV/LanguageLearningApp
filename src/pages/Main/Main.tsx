@@ -1,6 +1,6 @@
 import DescriptiveSection from "./DescriptiveSection/DescriptiveSection";
 import WelcomeSection from "./WelcomeSection/WelcomeSection";
-import styles from "./Main.module.scss";
+import styles from "./styles.module.scss";
 import Divider from "../../common/components/Divider/Divider";
 import { ReviewsSection } from "./ReviewsSection/ReviewsSection";
 
