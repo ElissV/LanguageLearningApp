@@ -24,7 +24,7 @@
             background-color: rgb(92, 213, 256);
             border-radius: 10px;
             outline: solid 2px #34ADD7;
-            font-size: 1.5rem;
+            font-size: calc(1.5rem + 0.5vw);
             font-weight: 900;
             backface-visibility: hidden;
             -webkit-backface-visibility: hidden;
@@ -43,8 +43,9 @@
                 position: absolute;
                 background-color: rgb(92, 213, 256);
                 color: #fff;
-                -webkit-text-stroke-width: 1.4px;
-                -webkit-text-stroke-color: #134c5f;
+                -webkit-text-stroke-width: calc(1px + 0.05vw);
+                -webkit-text-stroke-color: #185e75;
+                min-width: 94%;
             }
         }
 
