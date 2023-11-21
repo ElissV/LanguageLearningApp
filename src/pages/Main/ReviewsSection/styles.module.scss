@@ -38,15 +38,19 @@
         .ArrowContainerBlock {
             width: max-content;
         }
+
+        .InlineArrowButton, .ArrowButton {
+            padding: 0;
+        }
     }
 
-    @media screen and (min-width: 425px) {
+    @media screen and (min-width: 500px) {
         .ArrowContainerBlock {
             display: none;
         }
     }
 
-    @media screen and (max-width: 424px) {
+    @media screen and (max-width: 499px) {
         .ReviewCardContainer {
             flex-direction: column;
 

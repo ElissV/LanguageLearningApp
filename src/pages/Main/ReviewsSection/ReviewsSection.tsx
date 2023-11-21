@@ -24,11 +24,12 @@ export function ReviewsSection() {
                 <Button className={styles.InlineArrowButton}>
                     <ArrowForwardIosIcon className={styles.Icon} />
                 </Button>
+
                 <div className={styles.ArrowContainerBlock}>
-                    <Button>
+                    <Button className={styles.ArrowButton}>
                         <ArrowBackIosIcon className={styles.Icon} />
                     </Button>
-                    <Button>
+                    <Button className={styles.ArrowButton}>
                         <ArrowForwardIosIcon className={styles.Icon} />
                     </Button>
                 </div>
