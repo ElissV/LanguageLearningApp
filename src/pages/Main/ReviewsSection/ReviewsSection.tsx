@@ -15,10 +15,24 @@ export function ReviewsSection() {
                 <Button className={styles.InlineArrowButton}>
                     <ArrowBackIosIcon className={styles.Icon}/>
                 </Button>
-                <div className={styles.ReviewCard}>
-                    "Probably the best language learning app. I've been using it every day throughout 3 years."
-                    <div className={styles.ReviewerNameContainer}>
-                        - Alice
+                <div className={styles.ReviewCarousel}>
+                    <div className={styles.ReviewCard}>
+                        "Probably the best language learning app. I've been using it every day throughout 3 years."
+                        <div className={styles.ReviewerNameContainer}>
+                            - Alice
+                        </div>
+                    </div>
+                    <div className={styles.ReviewCard} data-active>
+                        "Nice app! Good design"
+                        <div className={styles.ReviewerNameContainer}>
+                            - Nick
+                        </div>
+                    </div>
+                    <div className={styles.ReviewCard}>
+                        "Love it!"
+                        <div className={styles.ReviewerNameContainer}>
+                            - Sam
+                        </div>
                     </div>
                 </div>
                 <Button className={styles.InlineArrowButton}>
